@@ -9,6 +9,14 @@ SSH_KEY_NAME="t2s-ssh-key"
 ARGOCD_NAMESPACE="argocd"
 AWS_ACCOUNT_ID="12342321123"
 
+# Export the variables to your local environment (Best Practice)
+## export AWS_REGION="us-east-1"
+## export ECR_REPO_NAME="beginner2master-app"
+## export EKS_CLUSTER_NAME="demo-cluster"
+## export SSH_KEY_NAME="t2s-ssh-key"
+## export ARGOCD_NAMESPACE="argocd"
+## export AWS_ACCOUNT_ID="12342321123"
+
 # Step 1: Create ECR Repository
 echo "Creating ECR repository..."
 aws ecr create-repository --repository-name $ECR_REPO_NAME --region $AWS_REGION
