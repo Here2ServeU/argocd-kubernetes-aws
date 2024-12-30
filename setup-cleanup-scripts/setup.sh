@@ -75,8 +75,8 @@ kubectl patch secret argocd-initial-admin-secret -n $ARGOCD_NAMESPACE -p '{"stri
 
 # Step 4: Deploy Application Using ArgoCD
 echo "Configuring ArgoCD application..."
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
+kubectl apply -f k8s-mainifests/deployment.yaml
+kubectl apply -f k8s-mainifests/service.yaml
 
 # Step 5: Clean Up Resources
 function cleanup() {
