@@ -13,6 +13,17 @@ This guide focuses on deploying a Node.js application to an Amazon Elastic Kuber
 4.	GitHub: Repository for application source code and Kubernetes manifests.
 
 ---
+
+## Run the Set Up Using a Bash Shell Script
+- Create a bash shell script and add the content from **infra-setup.sh**.
+```bash
+touch infra-setup.sh     # Create the file and add content. 
+chmod +x infra-setup.sh  # Make the script executable. 
+./infra-setup.sh         # Run the script.
+```
+
+---
+
 ## Step 1: Creating the ECR 
 ### Step 1.1: Prerequisites
 - AWS CLI installed and configured with proper permissions.
@@ -196,6 +207,13 @@ kubectl get svc
 ```
 
 ## Step 6: Clean Up Resources
+
+#### Clean Up Using the infra-setup.sh file
+- Comment (#) steps 1 through 4.
+- Uncomment the line "# cleanup" and rerun the script to clean up.
+```bash
+./infra-setup.sh
+```
 
 #### Step 6.1: Delete EKS Cluster
 ```bash
