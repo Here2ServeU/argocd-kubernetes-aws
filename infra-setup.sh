@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # Variables
+## Replace variables as desired
 AWS_REGION="us-east-1"
 ECR_REPO_NAME="beginner2master-app"
 EKS_CLUSTER_NAME="demo-cluster"
 SSH_KEY_NAME="t2s-ssh-key"
 ARGOCD_NAMESPACE="argocd"
+AWS_ACCOUNT_ID="12342321123"
 
 # Step 1: Create ECR Repository
 echo "Creating ECR repository..."
