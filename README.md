@@ -114,7 +114,7 @@ kubectl apply -n $ARGOCD_NAMESPACE -f https://raw.githubusercontent.com/argoproj
 
 # Expose ArgoCD server
 echo "Exposing ArgoCD server..."
-kubectl port-forward svc/argocd-server -n $ARGOCD_NAMESPACE 8080:443 &
+kubectl port-forward svc/argocd-server -n $ARGOCD_NAMESPACE 8081:443 &
 
 # Set ArgoCD admin password
 echo "Setting ArgoCD admin password..."
