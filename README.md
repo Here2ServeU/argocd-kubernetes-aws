@@ -6,6 +6,23 @@ This guide focuses on deploying a Node.js application to an Amazon Elastic Kuber
 
 ---
 
+## Use Cases of ArgoCD
+- 	**Continuous Deployment (CD)**: Automate deployments to Kubernetes clusters directly from Git.
+- 	**GitOps Workflow**: Manage infrastructure and apps using Git as the single source of truth.
+- 	**Multi-Cluster Management**: Deploy and sync apps across multiple Kubernetes clusters.
+- 	**Environment-Specific Deployments**: Customize dev, stage, and prod environments configurations.
+- 	**Progressive Delivery**: Implement canary or blue-green deployments for safer rollouts.
+- 	**Drift Detection**: Identify and fix configuration drift automatically.
+- 	**Infrastructure as Code**: Manage infrastructure and apps using tools like Helm or Terraform.
+- 	**Secure Deployments**: Use Git-based RBAC for restricted permissions.
+- 	**Audit and Compliance**: Track changes and enforce policies for compliance.
+- 	**Disaster Recovery**: Restore apps and configurations after failures.
+- 	**Multi-Cloud Support**: Manage Kubernetes clusters on AWS, Azure, GCP, and on-prem.
+
+ArgoCD simplifies Kubernetes deployments with GitOps, enhancing automation, security, and scalability.
+
+---
+
 ## Key Components:
 1.  ECR: Managed Elastic Container Repository to host images. 
 2.	EKS: Managed Kubernetes service for hosting the application.
