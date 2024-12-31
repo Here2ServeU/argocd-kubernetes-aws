@@ -189,6 +189,17 @@ function cleanup() {
 cleanup
 ```
 
+### Troubeshooting
+
+- In case you come across error messages as follows:
+```text
+Error from server (NotFound): secrets "argocd-initial-admin-secret" not found
+Configuring ArgoCD application...
+error: unable to forward port because pod is not running. Current status=Pending
+deployment.apps/t2s-nodejs-app created
+```
+- Re-run the setup.sh script since the provisioning of ArgoCD on the EKS cluster is only completed after the cluster creation. 
+
 ---
 
 ## Step 1: Creating the ECR 
