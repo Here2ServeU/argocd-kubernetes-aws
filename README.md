@@ -32,7 +32,7 @@ ArgoCD simplifies Kubernetes deployments with GitOps, enhancing automation, secu
 ---
 
 ## Run the Set Up Using a Bash Shell Script
-- Create a bash shell script and add the content from **infra-setup.sh**.
+#### Create a bash shell script and add the content from setup.sh and cleanup.sh.
 ```bash
 # Create the file and add content.
 touch setup.sh      # Create the setup and add the content below. 
@@ -55,7 +55,7 @@ SSH_KEY_NAME="t2s-ssh-key"
 ARGOCD_NAMESPACE="argocd"
 AWS_ACCOUNT_ID="123456743435"
 
-## Best Practice on Handling Variables. Input them on your local environment.
+## Best Practice on Handling Variables. Just put them on your local environment.
 ## Uncomment the commands below to do so. 
 # export AWS_REGION="us-east-1"
 # export ECR_REPO_NAME="beginner2master-app"
