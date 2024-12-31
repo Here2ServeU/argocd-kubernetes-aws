@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: t2s-nodejs-app
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: t2s-nodejs-app
+  template:
+    metadata:
+      labels:
+        app: t2s-nodejs-app
+    spec:
+      containers:
+        - name: t2s-nodejs-app
+          image: 730335276920.dkr.ecr.us-east-1.amazonaws.com/beginner2master-app:latest
+          ports:
+            - containerPort: 3000
